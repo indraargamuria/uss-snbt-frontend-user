@@ -1,0 +1,152 @@
+.catalog {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    min-height: 3px;
+}
+.catalogmid {
+    /* background-color: green; */
+    /* display: none; */
+}
+.catalogleft {
+    background-color: red;
+    display: none;
+}
+.catalogright {
+    background-color: yellow;
+    display: none;
+}
+.catalognav {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+.catalognav ul {
+    margin: 0;
+    padding: 0;
+}
+.catalognav ul li {
+    display: inline-block;
+    cursor: pointer;    
+    padding: 10px 30px;
+    font-size: 14px;
+}
+.catalognav-active {
+    color: #0058A7;
+    border-bottom: 3px solid #0058A7;
+    font-weight: bold;
+}
+.catalognav-inactive {
+    color: #0058A7;
+}
+.catalognav-inactive:hover {
+    border-bottom: 3px solid #a3d4ff;
+}
+.mobilecatalogcontent {
+    display: none;
+}
+.catalogcontent {
+    display: grid;
+    place-items: center;
+    overflow:auto;
+}
+.catalogcontent table {
+    
+}
+.catalogcontent table thead {
+    font-weight: bold;
+}
+.catalogcontent table tr td {
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.catalogcontent table tr td a {
+    background-color: white;
+    border: 1px solid #0058A7;
+    outline: none;
+    font-size: 12px;    
+    font-weight: bold;
+    padding: 5px 10px;
+    /* padding: 10px 15px; */
+    border-radius: 3px;
+    color: #0058A7;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.catalogcontent table tr td a:hover {
+    background-color: #0058A7;
+    color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+    .catalog {
+        display: grid;
+        grid-template-columns: 5vw 90vw 5vw;
+        /* min-height: 3px; */
+    }
+    .catalognav {
+        margin-top: 30px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 15px;
+    }
+    .catalognav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .catalognav ul li {
+        display: inline-block;
+        cursor: pointer;    
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+    .catalognav-active {
+        color: #0058A7;
+        border-bottom: 3px solid #0058A7;
+        font-weight: bold;
+    }
+    .catalognav-inactive {
+        color: #0058A7;
+    }
+    .catalognav-inactive:hover {
+        border-bottom: 3px solid #a3d4ff;
+    }
+    .catalogcontent {
+        display: none;
+    }
+    .mobilecatalogcontent {
+        display: grid;
+        place-items: center;
+    }
+    .mobilecatalogcontent table thead {
+        font-weight: bold;
+        text-align: center;
+    }
+    .mobilecatalogcontent table tr td {
+        /* text-align: center; */
+        font-size: 12px;
+    }
+    .mobilecatalogcontentpackage {
+        /* background-color: red; */
+        padding: 10px 10px 10px 0px;
+    }
+    .mobilecatalogcontent table tr td button {
+        background-color: white;
+        border: 1px solid #0058A7;
+        outline: none;
+        font-size: 12px;    
+        font-weight: bold;
+        padding: 5px 10px;
+        /* padding: 10px 15px; */
+        border-radius: 3px;
+        color: #0058A7;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .mobilecatalogcontent table tr td button:hover {
+        background-color: #0058A7;
+        color: #FFFFFF;
+    }
+}
