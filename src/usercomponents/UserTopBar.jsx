@@ -29,7 +29,7 @@ class UserTopBar extends Component {
                  </div>
                 <div className="topmid">
                     <div className="user">
-                        ARGA
+                        <a href="/login">ARGA</a>
                     </div>
                     <div className="pfp">
                         <img src="https://media.licdn.com/dms/image/C4D03AQFBEmwpP5mIeA/profile-displayphoto-shrink_800_800/0/1655984562589?e=2147483647&v=beta&t=UrYK3RJ8LiJ70_eUUrESWb3_zVYaOv8VsWJdNcPcvYc" alt="" />
@@ -37,7 +37,7 @@ class UserTopBar extends Component {
                 </div>
                 <div className="topright">
                     <div className="user">
-                        ARGA    
+                        <a href="/login">ARGA</a>
                     </div>
                     <div className="pfp">
                         <img src="https://media.licdn.com/dms/image/C4D03AQFBEmwpP5mIeA/profile-displayphoto-shrink_800_800/0/1655984562589?e=2147483647&v=beta&t=UrYK3RJ8LiJ70_eUUrESWb3_zVYaOv8VsWJdNcPcvYc" alt="" />

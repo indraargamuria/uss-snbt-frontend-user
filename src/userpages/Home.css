@@ -8,6 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x:hidden;
+    box-sizing: border-box;
 }
 .hide {
     display: none;
@@ -77,6 +78,10 @@ html, body {
     color: white;
     font-size: 14px;
     padding-right: 5px;
+}
+.user a {
+    text-decoration: none;
+    color: white;
 }
 .pfp {
     background-color: white;
@@ -642,5 +647,8 @@ html, body {
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .hide-on-mobile {
+        display: none;
     }
 }

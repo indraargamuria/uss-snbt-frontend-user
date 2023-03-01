@@ -1,12 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import './UserCatalog.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBoxesStacked, faCalendarAlt, faCalendarCheck, faCalendarPlus, faCartPlus, faGraduationCap, faHamburger, faStar, faThumbsUp, faUniversity, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
-import TryOutTimeline from '../usercomponents/TryOutTimeline';
-import Hero from '../usercomponents/Hero';
 import UserNav from '../usercomponents/UserNav';
 import UserTopBar from '../usercomponents/UserTopBar';
-import PackageBoxOrder from '../usercomponents/PackageBoxOrder';
+import './Catalog.css';
 
 class UserCatalog extends Component {
     state = {

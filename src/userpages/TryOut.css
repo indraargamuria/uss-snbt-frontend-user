@@ -1,0 +1,92 @@
+.tryout {
+    display: grid;
+    grid-template-columns: 10vw 50vw 30vw 10vw;
+    min-height: 100px;
+    padding-bottom: 30px;
+    /* background-color: grey; */
+}
+.tryout-blank {
+    /* background-color: antiquewhite; */
+}
+.tryout-mid {
+    display: none;
+}
+.tryout-left {
+    /* background-color: coral; */
+    height: 1000px;
+    margin-right: 30px;
+    background-color: #000;
+}
+.tryout-right {
+
+}
+.question-navwrapper {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.question-navtitle {
+    background-color: #0058A7;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+}
+.question-navcontent {
+    display: grid;
+    /* grid-template-columns: repeat(5,  30px); */
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    place-content: center;
+}
+.question-navbox {
+    /* background-color: #0058A7; */
+    /* min-height: 45px; */
+    position: relative;
+    display: grid;
+    place-items: center;
+    /* background-color: grey; */
+}
+.question-navbox-wrapper {
+    position: relative;
+}
+.question-answer-typeone {
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #0058A7;
+    width: 30px;
+    color: #0058A7;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+}
+.question-number-active {
+    position: absolute;
+    font-size: 10px;
+    top: -9px;
+    right: -9px;
+    background-color: #0058A7;
+    width: 18px;
+    height: 18px;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
+.question-number-inactive {
+    position: absolute;
+    font-size: 10px;
+    top: -9px;
+    right: -9px;
+    background-color: white;
+    border: 1px solid #0058A7;
+    width: 18px;
+    height: 18px;
+    color: #0058A7;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
