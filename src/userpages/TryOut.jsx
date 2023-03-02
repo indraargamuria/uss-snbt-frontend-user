@@ -37,7 +37,7 @@ class TryOut extends Component {
                 <div className="tryout-right">
                     <div className="question-navwrapper">
 
-                        <div className="question-navtitle">Navigasi</div>
+                        <div className="question-navtitle">Navigasi Ini</div>
                         <div className="question-navcontent">
                             {this.state.question_nav.map(datalist => {
                                 return <TryOutNav qnum={datalist.qnum} active={datalist.active}/>
