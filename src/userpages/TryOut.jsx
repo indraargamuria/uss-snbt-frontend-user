@@ -43,11 +43,11 @@ class TryOut extends Component {
                             </div>
                             <div className="question-content-sub">
                                 <ul>
-                                    <li><label htmlFor="a"><input type="radio" name="pilihan" id="a" />(A) eksistensi piranti pemainan kontemporer tidak lebih baik dari perkakas pemainan lawas</label></li>
-                                    <li><label htmlFor="b"><input type="radio" name="pilihan" id="b" />(B) pengalaman hidup seseorang atau kelompok di masa lalu yang kemudian dimaknai pada masa kini</label></li>
-                                    <li><label htmlFor="c"><input type="radio" name="pilihan" id="c" />(C) sarana alternatif agar anak tidak terlalu terikat dan termanjakan dengan gadget</label></li>
-                                    <li><label htmlFor="d"><input type="radio" name="pilihan" id="d" />(D) meminggirkan eksistensi permainan lawas yang telah terbentuk dalam kultur masyarakat</label></li>
-                                    <li><label htmlFor="e"><input type="radio" name="pilihan" id="e" />(E) memotivasi individu untuk mengembangkan diri secara aktif</label></li>
+                                    <li><label><input type="radio" name="pilihan" id="a" />(A) eksistensi piranti pemainan kontemporer tidak lebih baik dari perkakas pemainan lawas</label></li>
+                                    <li><label><input type="radio" name="pilihan" id="b" />(B) pengalaman hidup seseorang atau kelompok di masa lalu yang kemudian dimaknai pada masa kini</label></li>
+                                    <li><label><input type="radio" name="pilihan" id="c" />(C) sarana alternatif agar anak tidak terlalu terikat dan termanjakan dengan gadget</label></li>
+                                    <li><label><input type="radio" name="pilihan" id="d" />(D) meminggirkan eksistensi permainan lawas yang telah terbentuk dalam kultur masyarakat</label></li>
+                                    <li><label><input type="radio" name="pilihan" id="e" />(E) memotivasi individu untuk mengembangkan diri secara aktif</label></li>
                                 </ul>
                             </div>
                         </div>
