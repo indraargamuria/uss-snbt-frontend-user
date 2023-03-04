@@ -1,4 +1,4 @@
-import { faArrowRightToBracket, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightToBracket, faCheckCircle, faRectangleTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component, Fragment } from 'react';
 import UserNav from '../usercomponents/UserNav';
@@ -7,7 +7,7 @@ import './TryOut.css';
 
 class TryOut extends Component {
     state = {
-        active_question: 2,
+        active_question: 1,
         question_nav: [
             { id: 1, qnum: 1, active: 1},
             { id: 2, qnum: 2, active: 0},
@@ -74,7 +74,7 @@ class TryOut extends Component {
             },
             {
                 answer_id: 11,
-                answer_description: 'Mengurangi belanja negara pada subsidi bahan bakar minyakA',
+                answer_description: 'Mengurangi belanja negara pada subsidi bahan bakar minyak',
                 question_id: 3
             },
             {
@@ -101,6 +101,7 @@ class TryOut extends Component {
                 question_type: 'multiplechoice',
                 question_description: 
                     `<p>Permainan Lato-lato sedang menjadi tren setelah viral di Tik Tok. Permainan tersebut menggunakan sepasang bola kecil yang dikaitkan dengan seutas tali, dan kedua bola diayunkan hingga berbenturan, dan di situlah letak keasyikan dari bermain Lato-lato. Bermain Lato-lato juga memberikan manfaat yakni melatih kesabaran, keseimbangan, ketenangan berpikir, dan kemampuan dasar motorik.</p>
+                    <p><img style="max-width:100%"  src="https://buset-online.com/limabelas/wp-content/uploads/2023/02/lato-lato.jpeg"/></p>
                     <p>Lato-lato berkembang pada dekade 60-an dan mulai diperkenalkan di Amerika Serikat pada tahun 70-an. Pada tahun 90-an Lato-lato mulai merambah ke Indonesia. Lato-lato secara harfiah berasal dari bahasa Bugis. Di Makassar disebut sebagai Kato-kato. Sedangkan di Jawa disebut sebagai Tek-etek.</p>
                     <p>1.	Dalam bacaan, terdapat pernyataan “Lato-lato yang trending disebabkan oleh adanya pewarisan ingatan sosiohistoris akan eksistensi artefak klasik”.</p>`,
             },
@@ -227,8 +228,8 @@ class TryOut extends Component {
                                         <li>
                                             <div className="answer-truefalse-wrapper-title">
                                                 <span>PERNYATAAN</span>
-                                                <span>BENAR</span>
-                                                <span>SALAH</span>
+                                                <span><i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i></span>
+                                                <span><i><FontAwesomeIcon icon={faRectangleTimes}></FontAwesomeIcon></i></span>
                                             </div>
                                         </li>
                                         {this.state.displayed_answer.map(datalist => {
@@ -243,14 +244,14 @@ class TryOut extends Component {
                                                     <span className="answer-truefalse-content">{datalist.answer_description}</span>
                                                     <label className="answer-truefalse-radio-wrapper">
                                                         <input type="radio" name={'answer' + datalist.answer_id}/>
-                                                        <div className="answer-truefalse-radio-button">
+                                                        <div className="answer-truefalse-radio-button-true">
                                                             <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
                                                         </div>
                                                     </label>
                                                     <label className="answer-truefalse-radio-wrapper">
                                                         <input type="radio" name={'answer' + datalist.answer_id}/>
-                                                        <div className="answer-truefalse-radio-button">
-                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                        <div className="answer-truefalse-radio-button-false">
+                                                            <i><FontAwesomeIcon icon={faRectangleTimes}></FontAwesomeIcon></i>
                                                         </div>
                                                     </label>
                                                 </div>
@@ -341,8 +342,8 @@ class TryOut extends Component {
                                         <li>
                                             <div className="answer-truefalse-wrapper-title">
                                                 <span>PERNYATAAN</span>
-                                                <span>BENAR</span>
-                                                <span>SALAH</span>
+                                                <span><i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i></span>
+                                                <span><i><FontAwesomeIcon icon={faRectangleTimes}></FontAwesomeIcon></i></span>
                                             </div>
                                         </li>
                                         {this.state.displayed_answer.map(datalist => {
@@ -353,20 +354,20 @@ class TryOut extends Component {
                                                         {datalist.answer_description}
                                                     </span>
                                                 </label> */}
-                                                <div className="answer-truefalse-wrapper">
-                                                    <span className="answer-truefalse-content">{datalist.answer_description}</span>
-                                                    <label className="answer-truefalse-radio-wrapper">
-                                                        <input type="radio" name={'answer' + datalist.answer_id}/>
-                                                        <div className="answer-truefalse-radio-button">
-                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
-                                                        </div>
-                                                    </label>
-                                                    <label className="answer-truefalse-radio-wrapper">
-                                                        <input type="radio" name={'answer' + datalist.answer_id}/>
-                                                        <div className="answer-truefalse-radio-button">
-                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
-                                                        </div>
-                                                    </label>
+                                                    <div className="answer-truefalse-wrapper">
+                                                        <span className="answer-truefalse-content">{datalist.answer_description}</span>
+                                                        <label className="answer-truefalse-radio-wrapper">
+                                                            <input type="radio" name={'answer' + datalist.answer_id}/>
+                                                            <div className="answer-truefalse-radio-button-true">
+                                                                <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                            </div>
+                                                        </label>
+                                                        <label className="answer-truefalse-radio-wrapper">
+                                                            <input type="radio" name={'answer' + datalist.answer_id}/>
+                                                            <div className="answer-truefalse-radio-button-false">
+                                                                <i><FontAwesomeIcon icon={faRectangleTimes}></FontAwesomeIcon></i>
+                                                            </div>
+                                                        </label>
                                                 </div>
                                             </li>
 
@@ -376,7 +377,45 @@ class TryOut extends Component {
                             </div>
                         </div> 
                         : 
-                        <div></div>
+                        <div key={datalist.question_id} className="question-wrapper">
+                        
+                            <div className="question-title">Potensi Kognitif Soal No {datalist.question_id}</div>
+                            <div className="question-content">
+                                <div className="question-content-main">
+                                    <div dangerouslySetInnerHTML={{ __html: datalist.question_description}}></div>
+                                </div>
+                                <div className="question-content-sub border">
+                                    <ul>
+                                        <li>
+                                            <div className="answer-multiplecheck-wrapper-title">
+                                                <span>CEK</span>
+                                                <span>PERNYATAAN</span>
+                                            </div>
+                                        </li>
+                                        {this.state.displayed_answer.map(datalist => {
+                                            return <li key={datalist.answer_id}>
+                                                {/* <label className="answer-radio-wrapper">
+                                                    <input type="radio" name="answer"/>
+                                                    <span className="answer-radio-button">
+                                                        {datalist.answer_description}
+                                                    </span>
+                                                </label> */}
+                                                <div className="answer-multiplecheck-wrapper">
+                                                    <label className="answer-multiplecheck-radio-wrapper">
+                                                        <input type="checkbox" name={'answer' + datalist.answer_id}/>
+                                                        <div className="answer-multiplecheck-radio-button">
+                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                        </div>
+                                                    </label>
+                                                    <span className="answer-multiplecheck-content">{datalist.answer_description}</span>
+                                                </div>
+                                            </li>
+
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
                     })}
                     <div className="question-navwrapper">
 
