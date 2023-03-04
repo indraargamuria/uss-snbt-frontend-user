@@ -176,6 +176,11 @@
     margin-bottom: 20px;
 }
 @media (max-width: 900px) {
+    .prepare {
+        min-height: 3px;
+        display: grid;
+        grid-template-columns: 5vw 90vw 5vw;
+    }
     .preparerule-point {
         color: #000000;
         padding: 10px 10px 10px 5px;

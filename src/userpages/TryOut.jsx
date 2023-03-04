@@ -74,22 +74,22 @@ class TryOut extends Component {
             },
             {
                 answer_id: 11,
-                answer_description: 'A',
+                answer_description: 'Mengurangi belanja negara pada subsidi bahan bakar minyakA',
                 question_id: 3
             },
             {
                 answer_id: 12,
-                answer_description: 'B',
+                answer_description: 'Memperlancar ruas jalan',
                 question_id: 3
             },
             {
                 answer_id: 13,
-                answer_description: 'C',
+                answer_description: 'Meninggalkan kenyamanan kendaraan pribadi',
                 question_id: 3
             },
             {
                 answer_id: 14,
-                answer_description: 'D',
+                answer_description: 'Pamrih dalam menggunakan transportasi umum',
                 question_id: 3
             }
         ],
@@ -114,14 +114,12 @@ class TryOut extends Component {
             },
             {
                 question_id: 3,
-                question_type: 'multiplechoice',
+                question_type: 'multiplecheck',
                 question_description: 
-                    `<p>Permainan Lato-lato sedang menjadi tren setelah viral di Tik Tok. Permainan tersebut menggunakan sepasang bola kecil yang dikaitkan dengan seutas tali, dan kedua bola diayunkan hingga berbenturan, dan di situlah letak keasyikan dari bermain Lato-lato. Bermain Lato-lato juga memberikan manfaat yakni melatih kesabaran, keseimbangan, ketenangan berpikir, dan kemampuan dasar motorik.</p>
-                    <p>Lato-lato berkembang pada dekade 60-an dan mulai diperkenalkan di Amerika Serikat pada tahun 70-an. Pada tahun 90-an Lato-lato mulai merambah ke Indonesia. Lato-lato secara harfiah berasal dari bahasa Bugis. Di Makassar disebut sebagai Kato-kato. Sedangkan di Jawa disebut sebagai Tek-etek.</p>
-                    <p>Secara sosiologis, Lato-lato yang trending disebabkan oleh adanya pewarisan ingatan sosiohistoris akan eksistensi artefak klasik dan menandakan eksistensi piranti-piranti permainan kontemporer tidak lebih baik dari perkakas permainan lawas. Pewarisan memori sosiohistoris Lato-lato dibentuk dari sisi fenomenologis pada individu atau kelompok terhadap pengalaman di masa lalu untuk kemudian dimaknai atau didefinisikan ulang pada saat ini baik dalam hal fungsi, ciri khas, bentuk, nama maupun nilai-nilai yang terkandung di dalamnya.</p>
-                    <p>Aktualisasi kembali permainan Lato-lato di era ini juga dapat menjadi sarana alternatif agar anak-anak tidak terlalu terikat dan termanjakan dengan gadget, melatih kemampuan manual anak, dan memotivasi seorang individu khususnya anak yang cenderung lebih suka bermain untuk mengembangkan diri secara aktif dalam mendayagunakan pengalaman kebertubuhannya secara unik dan lebih dinamis terhadap artefak-artefak lama. Pengalaman kebertubuhan tersebut memperlakukan tubuh secara natural dalam mengonstruksi ide, rasionalitas, kreativitas, dan sisi kerja material yang memiliki nilai guna berkelanjutan secara historis dalam kehidupan sekaligus menjadi kritik terhadap wacana dominan digital games dan permainan modern lainnya yang cenderung meminggirkan eksistensi permainan lawas yang telah terbentuk dalam kultur masyarakat.</p>
-                    <p>3.	Dalam bacaan, terdapat pernyataan “Lato-lato yang trending disebabkan oleh adanya pewarisan ingatan sosiohistoris akan eksistensi artefak klasik”.</p>
-                    <p><img src=""/></p>`,
+                    `<p>Komunitas pengguna Kereta Rel Listrik (KRL) Jabodetabek, KRL Mania turut menanggapi soal wacana berlakunya tarif pembeda bagi kaya dan miskin. Jika demikian, ada potensi kekacauan di dalam rangkaian KRL ketika tarif diberikan tetapi fasilitas yang diterima masih sama. "Praktik pembedaan tarif KRL akan menyebabkan kerumitan. Selain kriteria yang tidak jelas, dapat terjadi kekacauan karena ada yang merasa berhak untuk duduk atau perlakuan lebih lain. Akan ada keributan antara 'kaya' dan 'miskin' yang diakibatkan kebijakan tersebut," tulis KRL Mania. Komunitas ini menyampaikan kalau masalahnya berada pada besaran subsidi KRL Jabodetabek, bisa dilakukan substitusi dengan subsidi dan kompensasi BBM. "Karena itu kalau ada masalah terhadap besaran subsidi KRL Jabodetabek, sebaiknya Menteri Perhubungan mengusulkan pengalihan subsidi dan kompensasi BBM saja. Kalau tidak, Presiden dapat mempertimbangkan pengganti yang lebih memiliki keberpihakan terhadap transportasi massal, APBN, dan iklim," paparnya</p>
+                    <p>Atas wacana perbedaan tarif ini, KRL Mania meminta Presiden Joko Widodo untuk menegur Menteri Perhubungan Budi Karya Sumadi. Alasannya, karena menghadirkan wacana kebijakan kontroversial di tengah upaya mendorong penggunaan transportasi massal. Lebih lanjut, KRL Mania menilai pengguna KRL dan angkutan umum massal lainnya sebenarnya adalah pahlawan transportasi, anggaran, dan iklim. Pertama, pengguna KRL adalah mereka yang rela menggunakan angkutan umum untuk memperlancar jalan di Jabodetabek. Sebagian pengguna memilih meninggalkan kenyamanan kendaraan pribadi dan berdesakan di KRL. Kedua, penggunaan transportasi massal seperti KRL mengurangi melonjaknya BBM Subsidi dan Kompensasi, yang tahun ini saja dianggarkan lebih Rp 260 triliun. Dapat dibayangkan lonjakan APBN jika pengguna KRL sejumlah sekitar 800 ribu beralih menggunakan kendaraan pribadi, serta mengisi Pertalite dan Biosolar subsidi. Ketiga, mengurangi emisi karbon di Jabodetabek. Menurut data, total emisi karbon dari sektor transportasi di Jakarta saja mencapai 182 juta ton. Pemakaian 1 liter mobil bensin mengeluarkan emisi sekitar 2,3 kg karbon.</p>
+                    <p>3.	Pilihlah dua pernyataan dengan memberikan tanda centang (√) yang mendukung bahwa pengguna transportasi kereta rel listrik adalah pahlawan transportasi !</p>
+                    `,
             }
         ]
     }
@@ -264,10 +262,147 @@ class TryOut extends Component {
                             </div>
                         </div> 
                         : 
-                        <div></div>
+                        <div key={datalist.question_id} className="question-wrapper">
+                        
+                            <div className="question-title">Potensi Kognitif Soal No {datalist.question_id}</div>
+                            <div className="question-content">
+                                <div className="question-content-main">
+                                    <div dangerouslySetInnerHTML={{ __html: datalist.question_description}}></div>
+                                </div>
+                                <div className="question-content-sub border">
+                                    <ul>
+                                        <li>
+                                            <div className="answer-multiplecheck-wrapper-title">
+                                                <span>CEK</span>
+                                                <span>PERNYATAAN</span>
+                                            </div>
+                                        </li>
+                                        {this.state.displayed_answer.map(datalist => {
+                                            return <li key={datalist.answer_id}>
+                                                {/* <label className="answer-radio-wrapper">
+                                                    <input type="radio" name="answer"/>
+                                                    <span className="answer-radio-button">
+                                                        {datalist.answer_description}
+                                                    </span>
+                                                </label> */}
+                                                <div className="answer-multiplecheck-wrapper">
+                                                    <label className="answer-multiplecheck-radio-wrapper">
+                                                        <input type="checkbox" name={'answer' + datalist.answer_id}/>
+                                                        <div className="answer-multiplecheck-radio-button">
+                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                        </div>
+                                                    </label>
+                                                    <span className="answer-multiplecheck-content">{datalist.answer_description}</span>
+                                                </div>
+                                            </li>
+
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
                     })}
                 </div>
-                <div className="tryout-mid"></div>
+                <div className="tryout-mid">
+                {this.state.displayed_question.map(datalist => {
+                        return this.state.active_question === 1 ? 
+                        <div key={datalist.question_id} className="question-wrapper">
+                        
+                            <div className="question-title">Potensi Kognitif Soal No {datalist.question_id}</div>
+                            <div className="question-content">
+                                <div className="question-content-main">
+                                    <div dangerouslySetInnerHTML={{ __html: datalist.question_description}}></div>
+                                </div>
+                                <div className="question-content-sub">
+                                    <ul>
+                                        {this.state.displayed_answer.map(datalist => {
+                                            return <li key={datalist.answer_id}>
+                                                <label className="answer-radio-wrapper">
+                                                    <input type="radio" name="answer"/>
+                                                    <span className="answer-radio-button">
+                                                        {datalist.answer_description}
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> : this.state.active_question === 2 ?
+                        <div key={datalist.question_id} className="question-wrapper">
+                        
+                            <div className="question-title">Potensi Kognitif Soal No {datalist.question_id}</div>
+                            <div className="question-content">
+                                <div className="question-content-main">
+                                    <div dangerouslySetInnerHTML={{ __html: datalist.question_description}}></div>
+                                </div>
+                                <div className="question-content-sub border">
+                                    <ul>
+                                        <li>
+                                            <div className="answer-truefalse-wrapper-title">
+                                                <span>PERNYATAAN</span>
+                                                <span>BENAR</span>
+                                                <span>SALAH</span>
+                                            </div>
+                                        </li>
+                                        {this.state.displayed_answer.map(datalist => {
+                                            return <li key={datalist.answer_id}>
+                                                {/* <label className="answer-radio-wrapper">
+                                                    <input type="radio" name="answer"/>
+                                                    <span className="answer-radio-button">
+                                                        {datalist.answer_description}
+                                                    </span>
+                                                </label> */}
+                                                <div className="answer-truefalse-wrapper">
+                                                    <span className="answer-truefalse-content">{datalist.answer_description}</span>
+                                                    <label className="answer-truefalse-radio-wrapper">
+                                                        <input type="radio" name={'answer' + datalist.answer_id}/>
+                                                        <div className="answer-truefalse-radio-button">
+                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                        </div>
+                                                    </label>
+                                                    <label className="answer-truefalse-radio-wrapper">
+                                                        <input type="radio" name={'answer' + datalist.answer_id}/>
+                                                        <div className="answer-truefalse-radio-button">
+                                                            <i><FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon></i>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                        : 
+                        <div></div>
+                    })}
+                    <div className="question-navwrapper">
+
+                        <div className="question-navtitle">Navigasi</div>
+                        <div className="question-navcontent">
+                            {this.state.question_nav.map(datalist => {
+                                return <div className="question-navbox" key={datalist.id} onClick={() => this.handleSetActiveQuestion(datalist.qnum)}>
+                                    <div className="question-navbox-wrapper" >
+                                        <div className="question-answer-typeone" >-</div>
+                                        <div className={datalist.qnum === this.state.active_question ? "question-number-active" : "question-number-inactive"}>{datalist.qnum}</div>
+                                    </div>
+                                </div>
+                                // <TryOutNav key={datalist.qnum} qnum={datalist.qnum} active={datalist.qnum === this.state.active_question ? 1 : 0}/>
+                            })}
+                                
+                        </div>
+                        <div className="question-navchangepage">
+                            {/* <button className="previous-page">
+                                a
+                            </button> */}
+                            <button className="next-page">
+                                <i><FontAwesomeIcon icon={faArrowRightToBracket}></FontAwesomeIcon></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div className="tryout-right">
                     <div className="question-navwrapper">
 
